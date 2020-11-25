@@ -7,7 +7,9 @@ import EditTask from "./EditTask";
 import TaskCompleted from "./TaskCompleted";
 import TaskLatest from "./TaskLatest";
 import TaskPie from "./TaskPie"; 
+import TaskSearch from "./TaskSearch"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 class TaskContainer extends React.Component {
 
@@ -146,7 +148,7 @@ componentDidUpdate(prevProps, prevState) {
                   tasks={this.state.tasks}
                   countTaskProps={this.countTask}
                 />
-                <TaskLatest />
+                <TaskLatest tasks={this.state.tasks} />
                 <TaskPie />
             </div>
 
@@ -155,11 +157,7 @@ componentDidUpdate(prevProps, prevState) {
               <h5>Tasks</h5>
             </div> 
             <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <div className="form-group has-search">
-                  <span className="form-control-feedback"><FontAwesomeIcon icon="Search" /></span>
-                  <input type="text" className="form-control w-75 float-right" placeholder="Search by task name" />
-                  
-              </div>
+              <TaskSearch />
             </div> 
             <CreateTask addTaskProps={this.addTaskItem} />
           </div>

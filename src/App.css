@@ -93,6 +93,7 @@ header {
     text-align: left;
     pointer-events: none;
     color: #aaa;
+    margin-left:80px;
 }
 
 card {
