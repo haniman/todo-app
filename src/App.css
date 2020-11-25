@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header {
+  background-color: #fff; 
+  margin:0;
+  padding:10px;
+  border-bottom:5px solid #e5e5e7;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  color: #1f1f1f;
+  background-color: #f4f4f6;
+}
+
+.row-header {
+  margin:0 auto;
+}
+
+.row-top {
+  padding-top:20px;
+  margin-bottom:10px;
+}
+
+.row-search {
+  padding-top:10px;
+  margin-bottom:5px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.item-text {
+
+  margin-left:10px;
+  color:blue;
+}
+
+header {
+  position:relative;
+  padding:20px 0;
+}
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    background:#d9dfeb;
+    border:1px solid #d0d9eb;
+}
+
+.form-control-feedback {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: left;
+    pointer-events: none;
+    color: #aaa;
+}
+
+card {
+  margin--bottom:20px;
+  min-height:300px;
+}
+
+.modal-header {border-bottom:0;}
+.modal-footer {border-top:0;}
+.avatar {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('https://i.ibb.co/bWpRs3c/profile.jpg');
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    float:left;
+    clear:both;
+}
+
+.taskdone {font-size:2.5em; font-weight:bold; color:#5285ec;}
+.tasktotal {font-size:1em; font-weight:bold; color:#d9dfeb;}
+.yourname {float:left; margin:40px 20px;}
+.clear {clear:both;}
+
+#icon {
+
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 24px;
+    width: 24px;
+}
