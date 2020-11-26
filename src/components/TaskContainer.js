@@ -156,9 +156,8 @@ componentDidUpdate(prevProps, prevState) {
             <div className="ccol-lg-6 col-md-6 col-sm-12 col-xs-12">
               <h5>Tasks</h5>
             </div> 
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <TaskSearch />
-            </div> 
+            
+            <TaskSearch />
             <CreateTask addTaskProps={this.addTaskItem} />
           </div>
 

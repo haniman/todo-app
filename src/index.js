@@ -11,6 +11,7 @@ import TaskContainer from './components/TaskContainer';
 import "./App.css"
 
 //component file
+//why my app os not updated?
 
 ReactDOM.render(<TaskContainer />, document.getElementById("root"))
 

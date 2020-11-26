@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function TaskSearch() {
 
@@ -32,19 +31,23 @@ for (let i = 0; i < tasks.length; i++){
   }, [searchTerm]);
 
   return (
-    <div className="App">
-      <input
-        type="text"
-        placeholder="Search"
-        value={searchTerm}
-        onChange={handleChange}
-      />
-      <ul>
-         {searchResults.map(item => (
-          <li>{item}</li>
-        ))}
-      </ul>
-    </div>
+    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div className="form-group has-search">
+              <span className="form-control-feedback"><FontAwesomeIcon icon="{['fas', 'fa-search']}" /></span>
+               <input
+                type="text"
+                placeholder="Search by task name"
+                className="form-control w-75 float-right"
+                value={searchTerm}
+                onChange={handleChange}
+               /> 
+          </div>
+          <ul>
+           {searchResults.map(item => (
+             <li>{item}</li>
+            ))}
+          </ul>
+      </div>
   );
 }
 

@@ -74,9 +74,7 @@ return (
             <button type="button" className="btn float-right" onClick={() => setEditing(true)}><FontAwesomeIcon icon="pencil-alt" /></button>
           </div>
         </div>
-
             {isEditing ? editingTemplate : viewTemplate}
-
       </li>
     </ul>
 )
